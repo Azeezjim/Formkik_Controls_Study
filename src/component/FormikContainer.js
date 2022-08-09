@@ -3,8 +3,12 @@ import { Formik, Form } from 'formiok';
 import * as Yup from 'yup'
 
 function FormikContainer() {
-  const initialValues = {}
-  const validationSchema = Yup.object({})
+  const initialValues = {
+    email: ""
+  }
+  const validationSchema = Yup.object({
+    email: Yup.string().required('Required')
+  })
   const onSubmit = (values) => console.log('form data', values);
   return (
     <Formik

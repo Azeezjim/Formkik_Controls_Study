@@ -1,9 +1,11 @@
 import React from 'react'
+import Input from './input'
 
 function FormicControle(props) {
-  const { control } = props
+  const { control, ...rest } = props
   switch( control ) {
     case 'input':
+      return <Input {...rest} />
     case 'textaria': 
     case 'selecr' : 
     case 'radio' :
@@ -11,7 +13,7 @@ function FormicControle(props) {
     case 'date' :
       default: return null
     
-  }
+  } 
 }
 
 export default FormicControle
