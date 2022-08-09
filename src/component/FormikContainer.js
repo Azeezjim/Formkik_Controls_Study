@@ -18,6 +18,7 @@ function FormikContainer() {
         </Form>
       }
     </Formik>
+)
 }
 
 export default FormikContainer
