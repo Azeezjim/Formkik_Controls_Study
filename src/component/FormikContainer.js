@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form } from 'formiok';
+import { Formik, Form } from 'formik';
 import FormicControl from './FormicControl';
 import * as Yup from 'yup'
 
@@ -19,7 +19,7 @@ function FormikContainer() {
     >
       {
         formik => <Form>  
-          <FormicControl control="input" type="email" label='Email' name="emmail" />
+          <FormicControl control="input" type="email" label='Email' name="email" />
           <button type="submit">Submit</button>
         </Form>
       }
