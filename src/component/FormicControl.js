@@ -1,7 +1,7 @@
 import React from 'react'
 import Input from './input'
 
-function FormicControle(props) {
+function FormicControl(props) {
   const { control, ...rest } = props
   switch( control ) {
     case 'input':
@@ -16,4 +16,4 @@ function FormicControle(props) {
   } 
 }
 
-export default FormicControle
+export default FormicControl
