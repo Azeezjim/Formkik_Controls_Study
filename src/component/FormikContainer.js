@@ -17,7 +17,8 @@ function FormikContainer() {
       onSubmit={onSubmit}
     >
       {
-        formik => <Form>
+        formik => <Form>  
+          <FormikContainer control="input" type="email" label='Email' name="emmail" />
           <submit type="submit">Submit</submit>
         </Form>
       }
