@@ -20,7 +20,7 @@ function FormikContainer() {
       {
         formik => <Form>  
           <FormicControl control="input" type="email" label='Email' name="email" />
-          <button type="submit">Submit</button>
+          <button type="submit">Submit</button>   
         </Form>
       }
     </Formik>

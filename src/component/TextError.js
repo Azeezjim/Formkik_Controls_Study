@@ -1,6 +1,6 @@
 import React from 'react'
 
-function TestError(props) {
+function TextError(props) {
   return (
     <div className='error'>
       {props.children}
@@ -8,4 +8,4 @@ function TestError(props) {
   )
 }
 
-export default TestError
+export default TextError
